@@ -1,0 +1,68 @@
+.head {
+  cursor: pointer;
+}
+
+.head .logo img {
+  width: 100%;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+header li {
+  margin-right: 30px;
+  transition: 0.5s;
+}
+
+header li a {
+  color: #fff;
+  transition: 0.5s;
+}
+
+header li a:hover {
+  color: coral;
+  cursor: pointer;
+}
+
+.barIco {
+  font-size: 25px;
+  background: none;
+  color: #fff;
+  display: none;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .head .ad {
+    display: none;
+  }
+  header .icon {
+    display: none;
+  }
+
+  header .flex {
+    display: none;
+  }
+
+  .barIco {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    display: block;
+    background-color: #fb4c35;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    height: 25vh; /* Ubah part ni kalo nak besarkan/kecikkan navbar size mobile view */
+    z-index: 5;
+    padding: 50px;
+  }
+
+  header ul li {
+    margin-bottom: 30px;
+  }
+}
